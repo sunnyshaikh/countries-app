@@ -17,7 +17,7 @@ const Countries = () => {
   }, [])
   return (
     <div className="container">
-      <SearchCountry setCountries={setCountries} />
+      <SearchCountry setCountries={setCountries} countries={countries} />
       <div className="cards">
         {
           countries.map((country, id) => (
