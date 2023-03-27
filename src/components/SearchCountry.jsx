@@ -11,7 +11,7 @@ const SearchCountry = ({ setCountries, countries }) => {
 
     const result = json.filter(country => {
       return (
-        country && country.name.common && country.name.common.toLowerCase().includes(val)
+        country && country.name.common && country.name.common.toLowerCase().includes(val.toLowerCase())
       )
     })
 
