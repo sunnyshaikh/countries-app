@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { MoonFill, SunFill } from 'react-bootstrap-icons'
+import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs'
 
 const Header = () => {
   // theme toggle state
@@ -29,11 +29,11 @@ const Header = () => {
           {
             theme === "dark" ?
               <button className="btn" id="toggle-theme-btn" onClick={toggleTheme}>
-                <MoonFill color="white" /> Dark Theme
+                <BsFillMoonFill color="white" /> Dark Theme
               </button>
               :
               <button className="btn" id="toggle-theme-btn" onClick={toggleTheme}>
-                <SunFill color="black" /> Light Theme
+                <BsFillSunFill color="black" /> Light Theme
               </button>
           }
         </div>

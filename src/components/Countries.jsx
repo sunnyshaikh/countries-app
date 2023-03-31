@@ -13,6 +13,7 @@ const Countries = () => {
     setCountries(json)
   }
   useEffect(() => {
+    document.title = "All countries"
     fetchCountries()
   }, [])
   return (

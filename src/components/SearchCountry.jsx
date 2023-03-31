@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Search } from 'react-bootstrap-icons'
+import { AiOutlineSearch } from 'react-icons/ai'
 
 const SearchCountry = ({ setCountries, countries }) => {
   // search state
@@ -37,7 +37,7 @@ const SearchCountry = ({ setCountries, countries }) => {
   return (
     <div className="search-bar">
       <form id="form">
-        <Search />
+        <AiOutlineSearch />
         <input type="text"
           placeholder="Search for a country"
           className="input"
