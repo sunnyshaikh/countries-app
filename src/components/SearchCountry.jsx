@@ -42,10 +42,11 @@ const SearchCountry = ({ setCountries, countries }) => {
           placeholder="Search for a country"
           className="input"
           name="input"
+          aria-label="search"
           value={search}
           onChange={e => handleChange(e.target.value)} />
       </form>
-      <select onChange={filterByRegion}>
+      <select onChange={filterByRegion} name="region">
         <option value="none">Filter by Region</option>
         <option value="Africa">Africa</option>
         <option value="America">America</option>

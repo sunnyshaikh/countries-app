@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const CountryCard = ({ country }) => {
   return (
     <div className="card">
-      <Link to={`/country/${country.name.common}`} ariaLabel="image">
+      <Link to={`/country/${country.name.common}`} aria-label="image">
         <img src={country.flags.svg} alt={country.name.common} />
       </Link>
       <div className="card-body">
